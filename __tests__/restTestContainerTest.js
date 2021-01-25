@@ -43,7 +43,7 @@ test('Retrieve all films', async () => {
 
   const response = await request.get('/api/films/').expect(200);
 
-  expect(response.body.length).toBe(5);
+  expect(response.body.length).toBe(2);
   expect(response.body).toEqual(
     expect.arrayContaining([
       expect.objectContaining({"title": "film1"}),
